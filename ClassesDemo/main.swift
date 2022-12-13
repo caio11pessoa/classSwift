@@ -1,11 +1,22 @@
+let skeleton = Enemy(health: 100, attackStrength: 10)
+//print(skeleton.health)
 //
-//  main.swift
-//  ClassesDemo
-//
-//  Created by Caio de Almeida Pessoa on 31/10/22.
-//
+//skeleton.move()
+//skeleton.attack()
 
-import Foundation
+//Reference of skeleton
+let skeleton2 = skeleton
 
-print("Hello, World!")
+skeleton.takeDamage(amount: 10)
 
+// Another Object
+let skeleton3 = Enemy(health: 100, attackStrength: 10)
+
+print(skeleton3.health, skeleton2.health)
+
+//let dragon = Dragon()
+//dragon.wingSpan = 5
+//dragon.attackStrength = 15
+//dragon.talk(speech: "My teeth are swords! My claws are spears! My wings are a hurricane")
+//dragon.move()
+//dragon.attack()
